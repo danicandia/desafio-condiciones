@@ -1,0 +1,32 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.stickers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sticker{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.verificar{
+    padding-top: 1em;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.selectores{
+    display: flex;
+    justify-content: center;
+}

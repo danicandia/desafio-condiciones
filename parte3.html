@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 3 Condiciones</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <h3 class="texto-centrado">Ingresa el pasword</h3>
+        <div class="selectores">
+            <select name="digito1" id="digito1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="digito2" id="digito2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="digito3" id="digito3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <div class="verificar">
+            <p id="mensaje" class="texto-centrado"></p>
+            <button onclick="
+                digito1 = document.querySelector('#digito1').value;
+                digito2 = document.querySelector('#digito2').value;
+                digito3 = document.querySelector('#digito3').value;
+                password = digito1 + digito2 + digito3;
+                mensaje = document.querySelector('#mensaje');
+                console.log(password);
+
+                if(password == '911'){
+                    mensaje.innerHTML = 'Password 1 correcto.';
+                }
+                else if(password == '714'){
+                    mensaje.innerHTML = 'Password 2 correcto.';
+                }
+                else{
+                    mensaje.innerHTML = 'Password incorrecto.';
+                }
+            ">Ingresar</button>
+        </div>
+    </div>
+</body>
+</html>
